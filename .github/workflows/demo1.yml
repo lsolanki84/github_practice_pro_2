@@ -1,11 +1,7 @@
 name: Events Demo 1
 on:
-  pull_request:
-    types:
-      - opened
-      - synchronize
-      - reopened
-    branches: main
+  push:
+    branches: dev
 jobs:
   deploy:
     runs-on: ubuntu-latest
